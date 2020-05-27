@@ -17,7 +17,9 @@ if AUTOPFP_PACK is None:
   "4k-sci-fi-wallpaper",
   "star-wars-iphone-6-wallpaper",
   "kylo-ren-wallpaper",
-  "darth-vader-wallpaper"
+  "darth-vader-wallpaper",
+  "emma-stone-hd-wallpaper",
+  "celebrities-wallpaper"
   ]
 else:
   PACK = AUTOPFP_PACK
