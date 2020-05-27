@@ -1,7 +1,7 @@
 {
   "name": "The_Surajit_Bot",
   "description": "Userbot created by a SNAPDRAGON and custom fork by SURAJIT\n\n massage https://t.me/surajit1 for any problems or support",
-  "logo": "https://telegra.ph/file/The-Surajit-05-27",
+  "logo": "https://telegra.ph/file/abee6087c0271b1b6ad44.jpg".
   "keywords": [
     "telegram",
     "userbot",
@@ -21,6 +21,10 @@
       "description": "Where downloaded files will go.",
       "value": "./userbot/DOWNLOADS/",
       "required": false
+    },
+    "ALIVE_NAME": { 
+      "description": "Enter your telegram name",
+      "value": ""
     },
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
