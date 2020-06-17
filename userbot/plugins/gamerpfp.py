@@ -13,13 +13,14 @@ from time import sleep
 AUTOPFP_PACK = os.environ.get("AUTOPFP_PACK", None)
 if AUTOPFP_PACK is None:
   PACK = [
-  "star-wars-wallpaper-1080p",
-  "4k-sci-fi-wallpaper",
-  "star-wars-iphone-6-wallpaper",
-  "kylo-ren-wallpaper",
+  "girls-on-motorcycles-wallpapers",
+  "motorcycle-girl-wallpaper",
+  "kate-winslet-wallpapers-titanic",
+  "taylor-momsen-wallpaper-hd",
   "darth-vader-wallpaper",
   "emma-stone-hd-wallpaper",
-  "celebrities-wallpaper"
+  "celebrities-wallpaper",
+  "sasha-gray-wallpaper"
   ]
 else:
   PACK = AUTOPFP_PACK
