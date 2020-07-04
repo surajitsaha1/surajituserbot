@@ -1,20 +1,7 @@
-import html
-from typing import Optional, List
-
-from telethon import Message, Chat, Update, Bot, User
-from telethon import ParseMode, InlineKeyboardMarkup
-from telethon.error import BadRequest
-from telethon.ext import MessageHandler, Filters, CommandHandler, run_async
-from telethon.utils.helpers import mention_markdown, mention_html, escape_markdown
-
-import userbot.modules.sql.welcome_sql as sql
-from userbot import dispatcher, OWNER_ID, LOGGER
-from userbot.modules.helper_funcs.chat_status import user_admin, can_delete
-from userbot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from userbot.modules.helper_funcs.msg_types import get_welcome_type
-from userbot.modules.helper_funcs.string_handling import markdown_parser, \
-    escape_invalid_curly_brackets
-from userbot.modules.log_channel import loggable
+from telethon import events
+from telethon.utils import pack_bot_file_id
+from userbot.plugins.sql_helper.welcome_sql import get_current_welcome_settings, \
+    add_welcome_setting, rm_welcome_setting, update_previous_welcome
 
 VALID_WELCOME_FORMATTERS = ['first', 'last', 'fullname', 'username', 'id', 'count', 'chatname', 'mention']
 
